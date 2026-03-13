@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <!-- 包名（必须和功能包目录名一致：my_class_pkg） -->
+  <name>my_class_pkg</name>
+  <version>0.0.0</version>
+  <description>ROS 2 publisher node example for wx_ros_class_ws</description>
+  <!-- 维护者信息（可替换为你的邮箱） -->
+  <maintainer email="you@example.com">Your Name</maintainer>
+  <license>Apache-2.0</license>
+
+  <!-- 编译工具依赖（ROS 2 必须） -->
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  
+  <!-- 运行时依赖（发布者节点需要的 rclcpp 和 std_msgs） -->
+  <depend>rclcpp</depend>
+  <depend>std_msgs</depend>
+
+  <!-- 测试依赖（可选，但 CMakeLists.txt 中用到了，需声明） -->
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <!-- 导出构建类型（必须） -->
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
+
