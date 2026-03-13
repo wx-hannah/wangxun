@@ -1,6 +1,7 @@
 wangxun‘s repository
 
-5.1标准消息
+#主题和消息
+#5.1标准消息
 # 进入工作空间根目录
 cd ~/wx_ros_class_ws
 # 先清理之前的编译缓存（可选，但建议执行）
@@ -32,7 +33,7 @@ ros2 run my_class_pkg ros_subscriber_node
 
 
 
-5.3自定义消息
+#5.3自定义消息
 #5.3.1自定义消息发布
 # 回到工作空间根目录（确保路径正确）
 cd ~/wx_ros_class_ws
@@ -56,14 +57,16 @@ source ~/wx_ros_class_ws/install/setup.bash
 ros2 run my_class_pkg msg_publisher_node
 
 
-5.5 实现 Launch 文件启动节点
+#5.5 实现 Launch 文件启动节点
 ros2 launch my_class_pkg bringup_topic_launch.py
 
-第二节课5.2实现ros动作的传递
+#服务和动作——
+#第二节课5.2实现ros动作的传递
+#启动服务节点
 source ~/wx_ros_class_ws/install/setup.bash
 ros2 run my_class_pkg ros_action_server.py
 
-
+#启动动作节点
 source ~/wx_ros_class_ws/install/setup.bash
 ros2 run my_class_pkg ros_action_client.py
 
